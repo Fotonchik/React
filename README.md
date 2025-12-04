@@ -1,3 +1,12 @@
+1-<img width="1773" height="896" alt="image" src="https://github.com/user-attachments/assets/e2791a7d-40ac-47ff-9164-f670c0dbe6d8" />
+<img width="1349" height="596" alt="image" src="https://github.com/user-attachments/assets/c760e2ae-fa86-46a0-b060-2bc878729178" />
+<img width="1354" height="586" alt="image" src="https://github.com/user-attachments/assets/46129311-fb2c-4a44-9458-a45aa77588be" />
+
+
+
+2- <img width="1682" height="887" alt="image" src="https://github.com/user-attachments/assets/bfec27ea-2825-4d68-b326-9793f416535d" />
+
+
 # 📦 Fastify API Server
 
 Небольшой сервер на [Fastify](https://www.fastify.io/) с поддержкой CORS, который обслуживает JSON-файл с пользовательскими данными.
@@ -75,3 +84,4 @@ server/
 │       └── users.json   # JSON-файл с данными пользователей
 └── (другие файлы проекта)
 ```
+
