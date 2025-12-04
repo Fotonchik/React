@@ -75,12 +75,12 @@ server/
 │       └── users.json   # JSON-файл с данными пользователей
 └── (другие файлы проекта)
 ```
-
-
+1.
 
 <img width="1674" height="862" alt="image" src="https://github.com/user-attachments/assets/4ec0ea84-18a2-4028-ba77-08e7fc1f1234" />
 <img width="1348" height="584" alt="image" src="https://github.com/user-attachments/assets/956cd795-7289-4ec1-ba67-60514769503a" />
 <img width="1348" height="556" alt="image" src="https://github.com/user-attachments/assets/bb2f3a1e-bc56-43ff-a166-71c03f96fc31" />
-
+2.   
+<img width="1889" height="1010" alt="image" src="https://github.com/user-attachments/assets/cbdfbac8-b34f-4f39-80ca-91733c901170" />
 
 
