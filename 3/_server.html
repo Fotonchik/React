@@ -1,0 +1,50 @@
+<%
+// Функция возвращает данные пользователя
+function getUser() {
+    // Получаем из базы данных массив всех пользователей
+    var users = XQuery("for $user in collaborators return $user")
+    // Преобразуем массив пользователей в массив с прямым индексированием 
+    // (для возможности использования далее users.length и users[index])
+    users = ArrayDirect(users)
+    // Общее количество пользователей
+    var usersNumber = users.length
+    // Возвращаем строку с ФИО и ID пользователя
+    var  All_user = ""
+    var i = 0
+    for(i = 0; i != usersNumber; i++) {
+        j = i+1
+        All_user += "</br> " +j+ ":" + users[i].fullname 
+    }
+     return All_user
+
+    // Учитывая то, что по заданию только добавлен 1 пользак - хороший хард код:
+    // return " 1:" + users[0].fullname + "</br> 2:" + users[1].fullname 
+}
+
+///
+/// Обрабатываем полученный POST запрос
+///
+
+// Преобразовываем тело полученного POST запроса из JSON формата в объект JavaScript
+var body = tools.read_object(Request.Body, 'json')
+
+// Получаем значение переменной parameter из POST запроса
+var parameter = body.parameter
+
+// Создаем переменную в которой будет храниться ответ сервера
+var response = {data : ""};
+
+// В зависимости от значения parameter устанавливаем значение переменной response
+switch (parameter) {
+    case "getUser":
+        response.data = getUser()
+    break
+}
+
+// Преобразовываем все в JSON формат
+response = tools.object_to_text(response, 'json')
+
+// Выводим сформированный ответ в JSON формате
+%>
+
+<%=response%>

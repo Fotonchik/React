@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Практика</title>
+	<style>
+		body {
+			display: flex;
+			flex-direction: column;
+		}
+
+		body > div {
+			display: flex;
+			margin-bottom: 16px;
+		}
+
+		body > div > div {
+			padding-left: 16px;
+			font-weight: 500;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<button onclick="getFromWebTutor('getUser')">Получить список всех пользователей</button>
+		<div id="getUser"></div>
+	</div>
+</body>
+<script>
+    async function getFromWebTutor(parameter) {
+        const response = await fetch('/_server.html', {
+            method: "POST",
+            body: JSON.stringify({
+                parameter: parameter
+            })
+        })
+        const json = await response.json()
+        document.querySelector(`#${parameter}`).innerHTML = json.data
+    }
+</script>
+</html>
