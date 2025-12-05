@@ -1,10 +1,11 @@
-1-<img width="1773" height="896" alt="image" src="https://github.com/user-attachments/assets/e2791a7d-40ac-47ff-9164-f670c0dbe6d8" />
+1- (код, который не в папке 2 и не в папке 3) так как не было указано, что писать в доп.информацию - там лежит адресс.
+<img width="1773" height="896" alt="image" src="https://github.com/user-attachments/assets/e2791a7d-40ac-47ff-9164-f670c0dbe6d8" />
 <img width="1349" height="596" alt="image" src="https://github.com/user-attachments/assets/c760e2ae-fa86-46a0-b060-2bc878729178" />
 <img width="1354" height="586" alt="image" src="https://github.com/user-attachments/assets/46129311-fb2c-4a44-9458-a45aa77588be" />
-
-
-
-2- <img width="1682" height="887" alt="image" src="https://github.com/user-attachments/assets/bfec27ea-2825-4d68-b326-9793f416535d" />
+2- (код в папке 2) 
+<img width="1682" height="887" alt="image" src="https://github.com/user-attachments/assets/bfec27ea-2825-4d68-b326-9793f416535d" />
+3- (код в папке 3, реализовала, через 2 файла, возможно излишне, но структуроно - правильнее, формирую ответ на стороне бэка
+<img width="1682" height="366" alt="image" src="https://github.com/user-attachments/assets/00a29893-8706-4325-b05e-423ec93d4321" />
 
 
 # 📦 Fastify API Server
@@ -84,4 +85,5 @@ server/
 │       └── users.json   # JSON-файл с данными пользователей
 └── (другие файлы проекта)
 ```
+
 
